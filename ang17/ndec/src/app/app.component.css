@@ -1,0 +1,22 @@
+.center-nanna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 43px;
+    font-family: monospace;
+    font-weight: 800;
+
+    color: rgb(218, 111, 11);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: blue;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}

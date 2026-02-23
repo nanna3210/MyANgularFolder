@@ -1,0 +1,66 @@
+<p>userco works!</p>
+<!-- <p>{{ users | json }}</p> -->
+<!-- @for (item of users; track $index) {
+<h2>{{ item.name }}</h2>
+<h3>{{ item.email }}</h3>
+<h4>{{ item.phone }}</h4>
+} -->
+<app-search
+  [filterUsers]="filterdUsers"
+  (searchTermChange)="onsearhtermChange($event)"
+></app-search>
+<P
+  ><strong>This data is going to {{ applicationName }}</strong></P
+>
+@for (item of users; track $index) {
+<h2>
+  <strong class="text-black-600 bg-red-400 p-1 rounded-md">{{
+    item.name
+  }}</strong>
+  and the EMAIL is
+  <strong class="text-black-600 bg-green-600 p-1 rounded-lg">{{
+    item.email
+  }}</strong>
+  and the address is
+  <strong>{{ item.address.city }}</strong>
+  , <strong>{{ item.address.street }}</strong> ,
+  <strong>{{ item.address.zipcode }}</strong> ,
+  <strong>{{ item.address.geo.lat }}</strong>
+</h2>
+}
+<div class="flex justify-center m-7">
+  <button
+    mat-raised-button
+    color="warn"
+    (click)="filterById()"
+    class="rounded-full p-7 bg-black text-green-700"
+  >
+    filter the ussers based on their ID
+  </button>
+</div>
+<div class="flex justify-center m-7">
+  <button
+    mat-raised-button
+    color="primary"
+    class="rounded-full p-7 bg-black text-green-700"
+  >
+    send data !
+  </button>
+</div>
+<h1>filtered users are</h1>
+@for (item of filterdUsers; track $index) {
+
+<div class="flex justify-center m-7">
+  <strong>{{ item.name }}</strong> and the id is
+  <strong>{{ item.id }}</strong> -
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="sendTheData(item.id)"
+    class="rounded-full p-7 bg-black text-green-700"
+  >
+    send Data !
+  </button>
+  <br />
+</div>
+}

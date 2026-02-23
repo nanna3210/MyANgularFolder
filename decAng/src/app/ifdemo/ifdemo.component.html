@@ -1,0 +1,49 @@
+<div class="container-fluid">
+  <div class="btn-toolbar bg-danger">
+    <div class="btn-group">
+      <div name="basic" (click)="changTemplate($event)" class="btn btn-danger">
+        basic details
+      </div>
+      <div
+        name="preview"
+        (click)="changTemplate($event)"
+        class="btn btn-danger"
+      >
+        preview
+      </div>
+      <div
+        name="priceRating"
+        (click)="changTemplate($event)"
+        class="btn btn-danger"
+      >
+        price and rating
+      </div>
+      <div
+        name="description"
+        (click)="changTemplate($event)"
+        class="btn btn-danger"
+      >
+        description
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" style="height: 500px; background: #1e9851">
+  <div [ngSwitch]="templateToDisplay">
+    <div *ngSwitchCase="'basic'">
+      {{ product.title }}
+    </div>
+    <div *ngSwitchCase="'preview'">
+      <img [src]="product.image" alt="" height="300" width="300" />
+    </div>
+    <div *ngSwitchCase="'priceRating'">
+      PRICE : {{ product.price }} <br />
+      RATING : {{ product.rating.rate }}<br />
+      RATING COUNT : {{ product.rating.count }}<br />
+    </div>
+    <div *ngSwitchDefault>
+      {{ product.description }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <h2>register fluid</h2>
+  <form
+    action=""
+    [formGroup]="frmRegister"
+    class="bg-warning w-40 p-3"
+    (submit)="formSubmit(frmRegister.value)"
+  >
+    <dl>
+      <dt>name</dt>
+      <dd><input type="text" requiered formControlName="Name" /></dd>
+      <dd class="text-danger" *ngIf="Name.invalid">
+        <span *ngIf="Name.errors?.['required']">name required </span>
+        <span *ngIf="Name.errors?.['minlength']">min 4 chars required </span>
+      </dd>
+      <dt>price</dt>
+      <dd><input type="text" formControlName="price" /></dd>
+      <div formGroupName="frmStock" class="bg-info p-3">
+        <dl>
+          <dt>status</dt>
+          <dd><input type="checkbox" formControlName="status" /></dd>
+          <dt>city</dt>
+          <dd>
+            <select name="" id="" formControlName="city">
+              <option>delhi</option>
+              <option>bhubaneswar</option>
+            </select>
+          </dd>
+        </dl>
+      </div>
+      <button class="btn btn-danger">submit</button>
+    </dl>
+  </form>
+  <!-- <h2>{{ frmRegister.value | json }}</h2>
+  --- pristine value
+  <h2>{{ frmRegister.pristine }}</h2>
+  --- dirty value
+  <h3>{{ frmRegister.dirty }}</h3>
+
+  <h1>{{ frmRegister.value.Name }}</h1>
+  <h1>{{ frmRegister.value.price }}</h1>
+  <h1>{{ frmRegister.value.shippedTo }}</h1>
+  <h2>{{ frmRegister.value.stock == true ? "availble" : "out of stock " }}</h2> -->
+</div>

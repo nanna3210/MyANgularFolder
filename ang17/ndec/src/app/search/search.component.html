@@ -1,0 +1,25 @@
+<div class="search-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Search</mat-label>
+    <input
+      matInput
+      [(ngModel)]="searchTerm"
+      placeholder="Search"
+      (keyup)="onKeyup($event)"
+    />
+
+    <button
+      mat-icon-button
+      matSuffix
+      color="warn"
+      class="w-10 h-5"
+      (click)="clearSearch()"
+    >
+      <mat-icon>clear</mat-icon>
+    </button>
+  </mat-form-field>
+</div>
+@for (item of filterUsers; track $index) {
+<h2 class="bg-red-600 text-yellow-500">{{ item.name }}</h2>
+<h2 class="bg-red-600 text-yellow-500">{{ item.address.city }}</h2>
+}

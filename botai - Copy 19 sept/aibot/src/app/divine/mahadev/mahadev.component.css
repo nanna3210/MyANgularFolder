@@ -1,0 +1,45 @@
+.ngifDemo {
+    display: flex;
+}
+
+.red {
+    border-radius: 7px;
+    background-color: tomato;
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.yellow {
+    border-radius: 7px;
+    background-color: rgb(218, 218, 0);
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.blue {
+    border-radius: 7px;
+    background-color: rgb(45, 45, 191);
+
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.ngFOrDEMO {
+    height: 300px;
+    width: 600px;
+    background-color: orangered;
+    border-radius: 7px;
+    margin: auto;
+    margin-bottom: 47px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    padding: 20px;
+}

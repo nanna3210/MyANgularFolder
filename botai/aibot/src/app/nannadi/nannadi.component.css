@@ -1,0 +1,31 @@
+.nannaStyle {
+
+    background-color: rgb(82, 95, 215);
+    color: yellow;
+    font-weight: bold;
+}
+
+.isHighlighted {
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+.nannaflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 600px;
+    margin: auto;
+    width: 600px;
+}
+
+.noHighlighted {
+    background-color: aliceblue;
+    color: red;
+    font-size: medium;
+    font-weight: 300;
+}

@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&family=Roboto+Slab:wght@500&display=swap');
+/* font-family: 'Lato', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto Slab', serif; */
+/* @use '@angular/material' as mat;  */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Smooch&display=swap');
+* { 
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+    box-sizing: border-box;
+    
+}
+body { 
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    scrollbar-width: none;
+    /* position:  relative; */
+    /* overflow-x: hidden; */
+    background-color: black;
+}
+body::-webkit-scrollbar { 
+    display: none;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

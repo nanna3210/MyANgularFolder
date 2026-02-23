@@ -1,0 +1,30 @@
+<div class="nannaBhai">
+    <h3>product categories</h3>
+    <ul class="list-unstyled">
+        <li>
+            <button (click)="filterButtonClick($event)" class="btn btn-link btn-ct" name="all">
+                All[{{ allcount }}]
+            </button>
+        </li>
+        <li>
+            <button class="btn btn-link btn-ct" (click)="filterButtonClick($event)" name="jewels">
+                jewels[{{ jeweleryCount }}]
+            </button>
+        </li>
+        <li>
+            <button class="btn btn-link btn-ct" (click)="filterButtonClick($event)" name="electronics">
+                electronics [{{ electronicsCount }}]
+            </button>
+        </li>
+        <li>
+            <button class="btn btn-link btn-ct" (click)="filterButtonClick($event)" name="mens clothing">
+                mens clothing [{{ menClothingCount }}]
+            </button>
+        </li>
+        <li>
+            <button class="btn btn-link btn-ct" (click)="filterButtonClick($event)" name="women clothing">
+                women clothing[{{ womenClothingCount }}]
+            </button>
+        </li>
+    </ul>
+</div>

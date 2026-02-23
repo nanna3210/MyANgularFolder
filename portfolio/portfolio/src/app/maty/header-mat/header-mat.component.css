@@ -1,0 +1,13 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .matTool_bar { 
+    z-index: 1;
+    background-color: black;
+    color: white;
+    padding: 100px;
+    border-radius: 20px;
+  }
+  .bartool { 
+    color: white;
+  }

@@ -1,0 +1,15 @@
+<button class="btn btn-warning p-2" (click)="gettheToDos()" #todoBtn>
+  get the todo those are completed
+</button>
+<input
+  type="text"
+  (input)="gtTheTerm()"
+  #inpt
+  placeholder="search here "
+  class="form-control w-50"
+/>
+<div *ngFor="let item of todos">
+  <h2 [ngClass]="{ 'text-danger': texColor }">{{ item.title }}</h2>
+  <h3>{{ item.completed }}</h3>
+  <h4>{{ item.userId }}</h4>
+</div>

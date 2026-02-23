@@ -1,0 +1,15 @@
+.valid-style {
+    border: 2px solid rgb(41, 168, 41);
+    background-color: #28a946;
+    color: white;
+}
+
+.invalid-style {
+    border: 2px solid rgb(129, 11, 11);
+    background-color: #7d130c;
+    color: white;
+}
+
+.valid-style:focus {
+    outline: none;
+}

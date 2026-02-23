@@ -1,0 +1,38 @@
+<h2></h2>
+<div class="container">
+  <div class="row">
+    <div class="col-4 offset-4">
+      <div class="input-group mb-3">
+        <input
+          appNumberonly
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+          #username
+        />
+      </div>
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="password"
+          aria-label="password"
+          aria-describedby="basic-addon1"
+          #password
+        />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="nanna" appChangebgColor *appHasPerission="'admin'">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto
+  fuga ipsum maiores officiis sed sit, veritatis! Ab ad, ea error fugiat ipsam
+  minus nobis nostrum perspiciatis placeat possimus quam quasi sed soluta
+  veritatis?
+</div>
+
+<script>
+  console.log("nannan ! ");
+</script>

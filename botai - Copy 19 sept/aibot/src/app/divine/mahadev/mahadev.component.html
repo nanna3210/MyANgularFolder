@@ -1,0 +1,57 @@
+<div class="container">
+  Hello ALL!
+  <div class="ngifDemo">
+    <div *ngIf="isVisible; else elseBlock">
+      this is ngIf paragraph if isVisible true then you can see it
+    </div>
+    <ng-template #elseBlock>
+      this is else paragraph if isVisible false then you can see it
+    </ng-template>
+  </div>
+  <!-- NGFOR  -->
+  <div class="ngFOrDEMO">
+    the Phone companies ENROLLED HERE
+    <h3 *ngFor="let item of phone">{{ item }}</h3>
+  </div>
+  <!-- ngswitch  -->
+  <div [ngSwitch]="color" [ngClass]="color">
+    <h2 *ngSwitchCase="'red'">red</h2>
+    <h2 *ngSwitchCase="'yellow'">yellow</h2>
+    <h2 *ngSwitchCase="'blue'">blue</h2>
+    <button
+      type="button"
+      (click)="changeTheColor('red')"
+      class="btn btn-danger"
+    >
+      change The Color to red
+    </button>
+    <button
+      type="button"
+      (click)="changeTheColor('yellow')"
+      class="btn btn-warning"
+    >
+      change The Color to yellow
+    </button>
+    <button
+      type="button"
+      (click)="changeTheColor('blue')"
+      class="btn btn-success"
+    >
+      change The Color to blue
+    </button>
+  </div>
+</div>
+<hr />
+<hr />
+<!-- user-list.component.html -->
+<div>
+  <h1>User List</h1>
+  <ul>
+    <li *ngFor="let user of users" (click)="selectedUser(user)">
+      {{ user.name }}
+    </li>
+  </ul>
+</div>
+
+<app-login [coderUser]="selectUser"></app-login>
+<app-devi-maa></app-devi-maa>

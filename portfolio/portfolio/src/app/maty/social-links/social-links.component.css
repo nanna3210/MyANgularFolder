@@ -1,0 +1,28 @@
+.links{ 
+
+    /* position: fixed; */
+    right: 62px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.link-item { 
+    transition: all 0.7s;
+    padding: 32px;
+    list-style-type:none;
+
+}
+.link-item:hover{ 
+    transform: scale(1.15);
+}
+
+/* .link { 
+
+} */
+
+.link-img { 
+    width: 30px;
+    height: 30px;
+}

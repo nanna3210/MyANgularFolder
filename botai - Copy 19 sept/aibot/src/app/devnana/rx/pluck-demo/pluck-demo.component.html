@@ -1,0 +1,32 @@
+<button
+  (click)="getTheStudents()"
+  [ngClass]="{ 'btn-warning': isClicked, 'btn-danger': !isClicked }"
+  class="btn"
+>
+  get The data
+</button>
+<h5 *ngFor="let item of student">{{ item.name }}</h5>
+<button (click)="getStudentsNameEverySecond()" class="btn btn-secondary">
+  get The name every seond
+</button>
+<h3 *ngFor="let item of namesArray">
+  {{ item }}
+</h3>
+<button (click)="takeOnly()" class="btn btn-primary">
+  take Onnly 7 students
+</button>
+<h3 *ngFor="let item of onlySomeStudents">
+  {{ item }}
+</h3>
+<!--  -->
+
+<!-- retryWithTheCount -->
+<button (click)="exampleRetryOPerator()" class="btn btn-danger">
+  retry with count
+</button>
+<h2>see th log</h2>
+<!-- retryWithTheCount -->
+<button (click)="exampleSubject()" class="btn btn-danger">
+  example subjct
+</button>
+<h2>see th log</h2>

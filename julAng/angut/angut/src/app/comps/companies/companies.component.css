@@ -1,0 +1,13 @@
+.csg {
+    justify-content: center;
+    text-align: center;
+
+}
+
+.inputName {
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    border-bottom: 2px solid green;
+    text-align: center;
+}

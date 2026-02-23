@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nanna PORTfolio</title>
+</head>
+<body>
+  
+<div class="color">
+
+
+</div>
+<header class="header">
+  <img src="../assets/nanna.jpg" alt="" class="logo">
+  <a href="mailto:navkishoredas@gmail.com" class="btn btn--contact" color="warn">
+    Contact me 
+  </a>
+  <!-- <button mat-button color="warn">Warningngnnngngn</button> -->
+</header>
+<main class="main">
+  <section class="intro">
+    <h1 class="first-heading"> Hello !!</h1>
+    <p class="text-heading"> hii I'm <span class="dev-name">nanna </span>a <strong class="dev-role">  Fullstack developer </strong>based out of india</p>
+    
+  </section>
+  <section class="work">
+    <div class="top">
+      <h2 class="second-heading"> My works </h2>
+      <ul class="filters" (click)="fading($event)">
+        <li class="filter-item" >
+          <button class="filter-btn" >
+            <a>All</a>
+          </button>
+        </li>
+        <li class="filter-item" >
+          <button class="filter-btn">
+            <a>FrontEnd</a>
+          </button>
+        </li>
+        <li class="filter-item" >
+          <button class="filter-btn">
+            <a >BackEnd</a>
+          </button>
+        </li>
+        <li class="filter-item"   >
+          <button class="filter-btn">
+            <a  class="">FullStack</a>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="grid">
+    <div class="project" *ngFor="let item of data">
+      <section class="project-info">
+        <h3 class="third-heading">{{item.workHeading}}</h3>
+        <p class="description"> {{item.workDescription}} </p>
+        <ul class="technologies" >
+          <li class="technology" *ngFor="let tech of item.technologies">| {{tech}} | </li>
+          <!-- <li class="technology">Angular</li> -->
+          <!-- <li class="technology">Spring</li> -->
+        </ul>
+
+      </section>
+      <img src="{{item.imageUrl}}" alt="" class="grid-img" >
+    </div>
+    <div  class="fade">
+      <!-- class="fade" -->
+      <!-- [class.fade]="'fade'" -->
+    </div>
+    
+  </section>
+    <a href="../assets/CV.pdf"  download=""  class="btn btn--download">DOWNLOAD CV</a>
+    
+      <app-social-links></app-social-links>
+    
+  </main>
+<div class="wrapper">
+  
+  
+  
+  
+  
+</div>
+
+
+<footer class="footer">
+  <!-- <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officia.</h1> -->
+<div class="matty">
+  <app-maty-all></app-maty-all>
+</div>
+  <small class="copyright">&copy; All rights Reserved </small>
+  
+</footer>
+
+<script>
+ 
+    
+
+</script>
+</body>
+</html>
+
+<!--    const fadeEl = document.querySelector('.fade')
+        window.addEventListener('scroll', ()=> { 
+          fadeEl.style.opacity ='0.2'; 
+        })
+        const filtersE1 = document.querySelector('.filters');
+        console.log('nanna');
+        const projectEl1 = document.querySelector('.project:nth-child(1)');
+        const projectEl2 = document.querySelector('.project:nth-child(2)');
+        const projectEl3 = document.querySelector('.project:nth-child(3)');
+        const projectEl4 = document.querySelector('.project:nth-child(4)');
+        const projectEl5 = document.querySelector('.project:nth-child(5)');
+        const projectEl6 = document.querySelector('.project:nth-child(6)');
+        const projectEl7 = document.querySelector('.project:nth-child(7)');
+        filtersE1.addEventListener('click', e => { 
+          fadeEl.style.opacity= '0'; 
+          console.log('nanna');
+          document.querySelector('.filter-btn--active').classList.remove('filter-btn--active'); 
+          e.target.classList.add('.filter-btn--active'); 
+          const filterText = e.target.textContent; 
+          console.log(filterText);    
+       
+       
+        }) -->
+

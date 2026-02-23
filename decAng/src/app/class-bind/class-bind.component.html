@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <form action="" [ngClass]="{'dark-theme':theme.value}">
+        <div class="form-switch">
+            dark theme :
+            <input type="checkbox" name="theme" ngModel #theme="ngModel" id="" />
+        </div>
+        <h2>register here</h2>
+        <dl>
+            <dt>username</dt>
+            <dd><input type="text" name="" class="form-control" id="" /></dd>
+            <dt>password</dt>
+            <dd><input type="password" name="" class="form-control" id="" /></dd>
+        </dl>
+        <button class="btn btn-warning m-3">register</button>
+    </form>
+
+    <div (mousemove)="mousemoving($event)">
+        <div class="container-fluid " style="height:1000px">
+
+        </div>
+
+        <!--  -->
+        <img [ngStyle]="styleObject" src="./../../assets/flag.gif" alt="" height="70px" width="70px">
+    </div>
+</div>

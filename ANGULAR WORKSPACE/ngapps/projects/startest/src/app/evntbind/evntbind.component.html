@@ -1,0 +1,25 @@
+<button (mousemove)="mouseMove($event)" class="btn btn-danger">
+  hello Evenet
+</button>
+<h1>{{ name | uppercase }}</h1>
+<h1>{{ name | lowercase }}</h1>
+<h1>{{ price | number : "0.2" }}</h1>
+<h1>{{ name | slice : 1 : 8 }}</h1>
+<table
+  class="table table-striped table-info table-hover w-75 mx-auto text-center mb-lg-5 border-danger"
+>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Shipped To</th>
+      <th>Dlivry time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of products">
+      <td>{{ item.name }}</td>
+      <td>{{ item.shippedTo }}</td>
+      <td>{{ item.shippedTo | i18nSelect : status }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,38 @@
+<h1>for Demo </h1>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-4">
+            <h2>register product </h2>
+            <dl>
+                <dt>Name </dt>
+                <dd> <input type="text" [(ngModel)]="productName" class="form-control"> </dd>
+                <dt>price </dt>
+                <dd> <input type="text" [(ngModel)]="productPrice" class="form-control"> </dd>
+
+            </dl>
+            <button class="btn btn-primary" (click)="registerClick()">register </button>
+        </div>
+        <div class="col-8">
+            <div class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Name </th>
+                        <th>price </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of products; let i = index">
+                        <td>{{item.Name}}</td>
+                        <td>{{item.price}}</td>
+                        <td>
+                            <button (click)=" deleteClick(i)" class="btn btn-danger">DEL </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </div>
+        </div>
+    </div>
+
+</div>

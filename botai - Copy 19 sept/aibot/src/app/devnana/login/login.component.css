@@ -1,0 +1,25 @@
+.detail {
+    display: flex;
+    justify-content: space-around;
+    /* Space between label and value */
+    width: 100%;
+    margin-bottom: 15px;
+    /* Space between each row */
+}
+
+.detail h2 {
+    margin-left: 10px;
+
+    /* Add some space between label and h2 */
+}
+
+.container {
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    height: 300px;
+    padding: 17px;
+    color: white;
+    background-color: rgb(5, 110, 12);
+    /* Centering within full screen height */
+}

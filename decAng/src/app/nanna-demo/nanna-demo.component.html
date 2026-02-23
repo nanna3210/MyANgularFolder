@@ -1,0 +1,14 @@
+<div class="container-fluid m-5">
+  <div class="row">
+    <div class="col-3">
+      <label for="" class="form-label"> select category</label>
+    </div>
+    <div class="col-9">
+      <select class="form-select">
+        <option value="" *ngFor="let item of categories">
+          {{ item | titlecase }}
+        </option>
+      </select>
+    </div>
+  </div>
+</div>

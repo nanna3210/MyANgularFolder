@@ -1,0 +1,77 @@
+.bg_transparent{ 
+    background-color: transparent;
+}
+.colorWhite { 
+    color: white;
+}
+.d-flex { 
+    display: flex;
+    justify-content: space-around;
+    
+}
+.ncolor1 { 
+    color: rgb(221, 13, 65);
+}
+.mat-button-toggle { 
+    color: white;
+    background-color: rgb(32, 41, 122);
+}
+.mat-button-toggle-checked { 
+    color: black;
+    background-color: rgb(184, 187, 214);
+}
+.example-card{
+    height: 400px;
+}
+.nanna-tab { 
+    background: white;
+    height: 200px;
+    
+}
+.tabDesc { 
+    margin: auto;
+    background-color: rgb(81, 34, 212);
+    
+}
+.mat-tab-group { 
+    margin-bottom: 40px;
+    border-radius: 7px;
+    background-image: linear-gradient(to top, rgb(45, 26, 131), transparent);
+    color: rgb(105, 3, 3);
+    font-weight: 800;
+    font-family: monospace;  
+    /* padding: 20px; */
+    margin-top: 30px;
+    line-height: 20px;
+    overflow: hidden;
+    height: 270px;
+    /* padding-bottom: 20px; */
+}
+
+.tabText { 
+    margin-top: 24px;
+    padding: 19px;
+    text-indent: 12px;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    font-size: 17px;
+    line-height: 30px;
+    /* word-spacing: 3px; */
+
+    
+}
+.tabText h2 { 
+    font-family: monospace;
+}
+.tech-used { 
+    /* color: rgb(59, 52, 48);  */
+    /* margin: 104px; */
+    padding: 10px;
+
+}
+.tech-used:hover { 
+    /* scale: ; */
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}

@@ -1,0 +1,20 @@
+<form #formdata="ngForm" (ngSubmit)="submitClicked(formdata.value)">
+    <dt>username</dt>
+    <dd>
+        <!--  -->
+        <input type="text" class="form-control" name="username" ngModel #username="ngModel">
+    </dd>
+
+    <dt>password</dt>
+    <dd>
+        <!--  -->
+        <input type="password" class="form-control" name="password" ngModel #password="ngModel">
+    </dd>
+    <button>ENTER</button>
+
+
+
+</form>
+
+<input type="text" class="form-control" (keyup)="clickingEvent($event)">
+<h1 [ngClass]="{'text-danger':!userAvailbale}">{{messageString}}</h1>

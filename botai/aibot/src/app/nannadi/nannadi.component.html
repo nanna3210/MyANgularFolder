@@ -1,0 +1,33 @@
+<!-- <form #form="ngForm">
+  <div>
+    <label for="phone"> Phone number</label>
+    <input type="text" id="phone" name="phone" ngModel appNumberd />
+    <div *ngIf="form.controls['phone']?.errors?.['invalidPhoneNumber']">
+      its a invalid Phone number must contain 10 digits
+    </div>
+  </div>
+  <button type="submit" [disabled]="form.invalid">submit</button>
+</form> -->
+<app-user-form></app-user-form>
+<br />
+<hr />
+<button (click)="toggleDisplay()">Toggle Disply</button>
+
+<div *ngIf="isVisible; else elseBlock">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minus
+</div>
+<ng-template #elseBlock>
+  <div *ngFor="let item of users" class="nannaStyle">
+    {{ item.name }}
+  </div>
+</ng-template>
+<h2>first name : {{ firtsName }}</h2>
+<input name="lastname" [(ngModel)]="lastName" />
+<h1>{{ lastName }}</h1>
+<div class="nannaStyle nannaflex" appColordirective>
+  <h1>The heading is</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita ipsum
+    quisquam libero eius earum reprehenderit aliquam animi.
+  </p>
+</div>

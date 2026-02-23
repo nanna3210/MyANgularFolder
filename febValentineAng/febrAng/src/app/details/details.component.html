@@ -1,0 +1,14 @@
+<!-- {{ product | json }} -->
+<h2>title</h2>
+<div class="prdata">
+  <div class="prod">
+    <h4>{{ product.title }}</h4>
+    <strong>price : </strong>
+    <h3>{{ product.price | currency : "CAD" }}</h3>
+    <h4><a routerLink="moredetails/{{ product.id }}">more detil</a></h4>
+    <img [src]="product.image" alt="" height="200" width="200" />
+  </div>
+  <div class="moredet">
+    <router-outlet></router-outlet>
+  </div>
+</div>

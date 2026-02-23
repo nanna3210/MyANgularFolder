@@ -1,0 +1,15 @@
+<h1 class="text-center banner-title">namaste 🙏</h1>
+<div class="button-container">
+  <button routerLink="/home" class="btn btn-danger">Go to Home</button>
+  <button routerLink="/about" class="btn btn-warning">About Us</button>
+  <button routerLink="/posts" class="btn btn-primary">See The posts</button>
+  <button routerLink="/classdem" class="btn btn-secondary">NG CLASS</button>
+  <button routerLink="/evtbind" class="btn btn-secondary">event Bnd</button>
+  <button routerLink="/tempform" class="btn btn-primary">template form</button>
+  <button routerLink="/reactform" class="btn btn-danger">reactive form</button>
+</div>
+<hr />
+
+<main [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</main>

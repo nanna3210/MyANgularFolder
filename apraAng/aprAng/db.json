@@ -1,0 +1,28 @@
+{
+  "Restaurants": [
+    {
+      "id": 1,
+      "Name": "Red Chillies",
+      "owner": "nanna",
+      "mobile": "+919089867908",
+      "email": "nanna@gmail.com",
+      "location": "Bhubaneswar"
+    },
+    {
+      "id": 2,
+      "Name": "Hind plaza",
+      "owner": "bapu",
+      "mobile": "+9198989789",
+      "email": "bapu@gmail.com",
+      "location": "bhawanipatna"
+    },
+    {
+      "id": 3,
+      "Name": "PETU",
+      "owner": "bapi",
+      "mobile": "+9189800880",
+      "email": "bapi@gmail.com",
+      "location": "Bangalore"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<form #form="ngForm" class="m-auto">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input
+      type="email"
+      class="form-control w-50"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      name="name"
+      [(ngModel)]="usernamepassword.name"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input
+      type="password"
+      class="form-control w-50"
+      id="exampleInputPassword1"
+      name="password"
+      [(ngModel)]="usernamepassword.password"
+    />
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="submitForm()">
+    Submit
+  </button>
+</form>

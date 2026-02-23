@@ -1,0 +1,10 @@
+.nanna {
+    height: 600px;
+    width: 900px;
+    background: linear-gradient(to top right, rgb(171, 110, 110), rgba(212, 26, 9, 0.048));
+    margin: auto;
+    padding: 50px;
+    /* background: linear-gradient(to top right, rgb(168, 130, 37), rgb(63, 153, 202)); */
+
+
+}

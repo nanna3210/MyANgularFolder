@@ -1,0 +1,58 @@
+<div class="container">
+  <form action="" [formGroup]="form" (ngSubmit)="onsubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name" />
+
+      <div
+        class="text-danger strongError"
+        *ngIf="form.get('name')?.invalid && form.get('name')?.touched"
+      >
+        Name is required
+      </div>
+    </div>
+
+    <!-- email -->
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email" />
+
+      <div
+        class="text-danger strongError"
+        *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+      >
+        Email not Valid
+      </div>
+    </div>
+    <!-- country -->
+
+    <div>
+      <label for="country">Country:</label>
+      <input id="country" formControlName="country" />
+
+      <div
+        class="text-danger strongError"
+        *ngIf="form.get('country')?.invalid && form.get('country')?.touched"
+        appOnlyLetter
+      >
+        Name is required
+      </div>
+    </div>
+    <!-- ZIP  -->
+
+    <div>
+      <label for="zip">ZIP :</label>
+      <input id="zip" formControlName="zip" appNumberonly />
+
+      <div
+        class="text-danger strongError"
+        *ngIf="form.get('zip')?.invalid && form.get('zip')?.touched"
+      >
+        ZIp Not valid
+      </div>
+    </div>
+    <button class="btn btn-warning" [disabled]="!form.valid">
+      submit The data
+    </button>
+  </form>
+</div>

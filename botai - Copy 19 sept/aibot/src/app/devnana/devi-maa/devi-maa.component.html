@@ -1,0 +1,15 @@
+<div class="studentsData">
+  <button class="btn btn-success" (click)="getData()">get Students</button>
+</div>
+<div class="allstudents">
+  <div *ngFor="let item of student">
+    Name :
+    <h5>{{ item.name }}</h5>
+    Email :
+    <h5>{{ item.email }}</h5>
+    City :
+    <h5>{{ item.address.city }}</h5>
+    <hr />
+    <hr />
+  </div>
+</div>

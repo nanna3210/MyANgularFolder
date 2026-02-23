@@ -1,0 +1,43 @@
+.nanna {
+    height: 600px;
+    width: 900px;
+    background: linear-gradient(to top right, rgb(181, 181, 46), rgb(63, 126, 63));
+
+    margin: auto;
+    padding: 40px;
+    /* background: linear-gradient(to top right, rgb(168, 130, 37), rgb(63, 153, 202)); */
+
+
+}
+
+.highlight {
+    font-size: 20px;
+    /* text-transform: lowercase; */
+    font-family: monospace;
+    transition: .3s;
+    letter-spacing: 4px;
+    background-color: rgb(174, 55, 55);
+    color: white;
+    padding: 7px;
+}
+
+.title {
+    /* background-color: red; */
+}
+
+.nanna:hover {
+    /* transform: scale(1.2); */
+}
+
+
+mat-grid-tile {
+    transform: scale(.96);
+    transition: .4s;
+
+
+}
+
+mat-grid-tile:hover {
+    transform: scale(.9);
+    background: linear-gradient(to top right, rgb(195, 195, 179), rgb(3, 22, 3));
+}

@@ -1,0 +1,21 @@
+<div class="nannaBhai">
+  <h2>product store !</h2>
+  <div class="row">
+    <div class="col-3">
+      <app-child (FilterChanged)="getCategoryName($event)" [allcount]="allcount" [electronicsCount]="electronicsCount"
+        [jeweleryCount]="jeweleryCount" [menClothingCount]="menClothingCount" [womenClothingCount]="womenClothingCount">
+      </app-child>
+    </div>
+    <div class="col-9">
+      <div class="d-flex flex-wrap overflow-auto" style="height: 700px">
+        <div class="card m-2 p-2" *ngFor="let product of products">
+          <img [src]="product.image" alt="" height="100" width="100" />
+          <div class="card-hader bg-danger p-2" style="height: 100px">
+            {{ product.title }}
+          </div>
+          <div class="card-footer bg-primary">${{ product.price }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

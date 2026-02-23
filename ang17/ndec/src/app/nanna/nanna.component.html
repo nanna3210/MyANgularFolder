@@ -1,0 +1,21 @@
+<h2 class="bg-red-600 w-700 h-10 text-center">Hello this nanna Component</h2>
+<div class="text-center">
+  @for (item of product; track $index) {
+  <h4
+    class="text-green-700 bg-slate-900 border-spacing-3 p-7 w-36 items-center"
+  >
+    {{ item.name }}
+    <span class="text-yellow-300">{{ item.price | currency : "INR" }}</span>
+  </h4>
+
+  <button mat-raised-button color="warn " (click)="viewProduct()">
+    view product
+  </button>
+  }
+</div>
+<div>
+  <p class="text-black">
+    <ng-content select="[first]"></ng-content>
+  </p>
+  <h2><ng-content select="[second]"></ng-content></h2>
+</div>

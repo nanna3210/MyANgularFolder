@@ -1,0 +1,20 @@
+<app-route-main></app-route-main>
+<h2 class="bg-red-500 text-center p-5">Hello All</h2>
+<div class="center-nanna bg-yellow-400 self-center">
+  <h3>
+    @if (title =='ndec') {
+    <h3 class="text-black font-extrabold text-2xl">December Application</h3>
+
+    } @else {
+    <h3 #notdecideYet>APllication Title not decide Yet</h3>
+    }
+  </h3>
+</div>
+<!-- <app-search></app-search> -->
+<!-- <app-home [name]="title"></app-home> -->
+<app-userco
+  [applicationName]="appName"
+  (viewUsers)="getUserId($event)"
+></app-userco>
+
+<h1>The User Id is {{ userId }}</h1>

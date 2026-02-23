@@ -1,0 +1,29 @@
+<h3>
+  @for (item of products; track $index) {
+  <h3 class="text-red-500 border-lime-300">
+    {{ item.name
+    }}<span class="text-green-700 border-lime-300"> {{ item.brand }}</span>
+  </h3>
+
+  }
+</h3>
+<div class="bg-red-600 text-center">
+  <h2>the title property is from the home component</h2>
+  <h3>{{ name | uppercase }}</h3>
+</div>
+<app-nanna [product]="products" (selectedProduct)="productSelection($event)">
+</app-nanna>
+
+<app-nanna>
+  <div first>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur quod
+    totam molestiae quo quibusdam nam? Reprehenderit explicabo suscipit a
+    inventore laudantium.
+  </div>
+</app-nanna>
+<app-nanna>
+  <div second>
+    {{ productDescriptionGiven }}
+  </div>
+</app-nanna>
+<h3>Content Child Example</h3>

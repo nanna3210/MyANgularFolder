@@ -1,0 +1,40 @@
+<p>parent works!</p>
+
+<div class="parentSec">
+  <h2>child nodes :</h2>
+  <h3>{{ childsSringData }}</h3>
+  <div class="chidNodes">
+    <app-child
+      [parentsData]="stringdata"
+      [parentsJsonObj]="jsonObj"
+      [parentsCourseData]="course"
+    >
+    </app-child>
+    <app-child
+      (childArrayObjEvent)="childArObj = $event"
+      (childStringEvent)="childsSringData = $event"
+    ></app-child>
+  </div>
+</div>
+<hr />
+<h3>parent properties</h3>
+<div class="childArrayObjEvent">
+  <div class="nanna" *ngFor="let item of childArObj; index as p">
+    <h1>the person name is {{ item.name }}</h1>
+    <h2>the person is Living in the city {{ item.city }}</h2>
+    <h3>the person is from {{ item.native }}</h3>
+  </div>
+</div>
+
+<button (click)="onSend()">SEND THE DATA</button>
+
+<div class="viewchildSection" #viewchildSection>
+  Lorem ipsum dolor sit, amet consectetur adipisicing elit. At blanditiis vero
+  reprehenderit?
+  <div *ngFor="let item of childArObj" >
+    <h2>{{ item.name }}</h2>
+    <h2>{{ item.city }}</h2>
+    <h2>{{ item.native }}</h2>
+    <hr />
+  </div>
+</div>

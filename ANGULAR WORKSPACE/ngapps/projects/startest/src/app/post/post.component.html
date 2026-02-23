@@ -1,0 +1,21 @@
+<div>
+  <input [(ngModel)]="input" placeholder="Enter post ID or " />
+  <button (click)="fetchPostsByID()" class="btn btn-dark">Get Post</button>
+  <button (click)="fetchALLPosts()" class="btn btn-info">Get ALL Posts</button>
+</div>
+<div class="container">
+  <div *ngIf="posts.length">
+    <h3 class="mb-4 fw-bold">All Posts</h3>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col" *ngFor="let p of posts">
+        <div class="card card-hover shadow-lg border-danger h-100">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Title: {{ p.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-secondary">ID: {{ p.id }}</h6>
+            <p class="card-text text-danger">Body: {{ p.body }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

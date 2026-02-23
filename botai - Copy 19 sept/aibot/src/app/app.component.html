@@ -1,0 +1,23 @@
+<div class="nannamid">
+  <h2>welcome to Angular Practice</h2>
+</div>
+<!-- <app-mahadev></app-mahadev> -->
+<a *ngIf="isVisible" routerLink="angubasic"> here is the basic </a>
+<button (click)="togglevisibility()" class="btn btn-success">
+  show angular basic
+</button>
+<div class="flex mb-7 nav">
+  <a routerLink="promiseDemo" class="linkHeader">promise Demo </a>
+  <a routerLink="fromEvent" class="linkHeader">from event Demo </a>
+  <a routerLink="intervalDemo" class="linkHeader">Interval Demo </a>
+  <a routerLink="ofFromDemo" class="linkHeader">Of -FROM Demo </a>
+  <a routerLink="toArrayDemo" class="linkHeader">To Array Demo </a>
+  <a routerLink="pluckDemo" class="linkHeader">Pluck Demo </a>
+  <a routerLink="subjectDemo" class="linkHeader">subject Demo </a>
+  <a routerLink="testingInter" class="linkHeader">testing component </a>
+  <a routerLink="observerdemo" class="linkHeader">Observable component </a>
+  <a routerLink="templateForm" class="linkHeader">Template component </a>
+  <a routerLink="reactiveForm" class="linkHeader">reactive component </a>
+</div>
+
+<router-outlet></router-outlet>

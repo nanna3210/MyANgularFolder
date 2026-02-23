@@ -1,0 +1,13 @@
+<div class="nanna">
+  <mat-grid-list cols="3" rowHeight="200px">
+    <mat-grid-tile
+      *ngFor="let item of tiles"
+      [style.background]="item.color"
+      (mouseover)="onmouseOver()"
+    >
+      <div class="title">
+        {{ item.text | uppercase }}
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

@@ -1,0 +1,23 @@
+<div class="justify-center">
+  <div
+    class="route-main flex m-7 bg-orange-600 justify-center w-1/2 min-h-72 rounded-md"
+  >
+    <h3 class="m-7 text-center">
+      <a
+        routerLink="/userDetail"
+        class="text-white cursor-grab font-bold tracking-widest"
+        >Router Detail
+      </a>
+      <br />
+      <a
+        routerLink="/home"
+        class="text-white cursor-grab font-bold tracking-widest"
+        >home
+      </a>
+    </h3>
+    <app-user-form></app-user-form>
+  </div>
+  <div>router outlet</div>
+  <router-outlet></router-outlet>
+  <div>router outlet</div>
+</div>

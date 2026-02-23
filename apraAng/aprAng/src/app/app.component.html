@@ -1,0 +1,17 @@
+<h1>nanna</h1>
+<h2 *ngFor="let item of nanna">
+  {{ item.name }}
+  {{ item.age }}
+</h2>
+<h3>{{ birthday | date : "fullDate" | uppercase }}</h3>
+<div *ngFor="let item of nanna">
+  <ng-container *ngIf="item.age > 30; then ifBlock; else elseBlock">
+  </ng-container>
+  <ng-template #ifBlock>
+    {{ item.name }}
+  </ng-template>
+  <ng-template #elseBlock>
+    <strong>{{ item.name }}</strong>
+  </ng-template>
+</div>
+<app-nanna-test></app-nanna-test>
