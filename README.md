@@ -39,3 +39,15 @@ This repo contains multiple Angular practice projects, each kept in its own fold
 Notes:
 - If different Node versions are needed, use a tool like `nvm` or `fnm`.
 - Each project is independent; there is no single root build.
+## Running Projects (Windows)
+
+If different Node versions are required per project, use a Node version manager like `nvm-windows` or `fnm`.
+
+Example workflow:
+1. Install a Node version: `nvm install 18.20.0`
+2. Use that version: `nvm use 18.20.0`
+3. `cd` into the project folder.
+4. Install deps: `npm install`
+5. Run: `npm start` or `ng serve`
+
+Tip: The required Node version is usually listed in each project `package.json` under `engines`, or in the Angular documentation for that major version.
